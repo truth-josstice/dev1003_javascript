@@ -22,9 +22,12 @@ let characterClasses = [
 function characterClassRenderer () {
     let targetParentContainer = document.querySelector("body");
     let classContainer = document.createElement("section");
-    classContainer.id = "classlist";
+    let classList = document.createElement("ul");
+    classContainer.id = "playableclasses";
     console.log(classContainer);
     targetParentContainer.appendChild(classContainer);
+    classContainer.appendChild(classList);
+
 
     // for (let index = 0; index < characterClasses.length; index++) {
     //     const characterClass = characterClasses[index];
@@ -52,10 +55,21 @@ function characterClassRenderer () {
         classContainer.appendChild(classCard);
     });
 
+    // making a list for fun
+    // characterClasses.forEach(characterClass => {
+    //     let classListItem = document.createElement("li");
+    //     classListItem.innerText = characterClass;
+    //     classList.appendChild(classListItem);
+    // })
+
     // //map is amazing for doing stuff and saving to new list
     // characterClasses.map(characterClass => {
     //     console.log(characterClass);
     // });
 }
 
-characterClassRenderer();
+// characterClassRenderer();
+
+
+let classToggleButton = document.getElementById("classToggleButton");
+classToggleButton.addEventListener("click", characterClassRenderer);

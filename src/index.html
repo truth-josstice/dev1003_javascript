@@ -15,6 +15,15 @@
     <p>Check the browser console for code outputs!</p>
 
     <!-- <script>
+        //does not work if the script if the import of js is after this script tag
+        characterClassRenderer();
+    </script> -->
+
+    <!-- button even works even thorugh script tag importing js is loaded after the button
+     because the user has to click this which happens after the import/html is fully loaded -->
+    <!-- <button onclick="characterClassRenderer()">Show the Classes</button> -->
+    <button id="classToggleButton">Show the classes!</button>
+    <!-- <script>
         console.log("Hello World! From the body of the page!")
     </script> -->
     
