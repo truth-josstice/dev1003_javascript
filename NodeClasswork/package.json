@@ -1,0 +1,20 @@
+{
+  "name": "nodeclasswork",
+  "version": "1.0.0",
+  "description": "\"ED Content on NodeJS\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Joss Raine",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truth-josstice/dev1003_javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/truth-josstice/dev1003_javascript/issues"
+  },
+  "homepage": "https://github.com/truth-josstice/dev1003_javascript#readme"
+}
